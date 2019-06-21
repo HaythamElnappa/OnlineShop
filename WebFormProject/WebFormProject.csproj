@@ -1,0 +1,628 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2DC16E7-DA91-4471-8852-A2A270588E7C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebFormProject</RootNamespace>
+    <AssemblyName>WebFormProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\all.css" />
+    <Content Include="assets\css\all.min.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\bootstrap-grid.css" />
+    <Content Include="assets\css\bootstrap-grid.min.css" />
+    <Content Include="assets\css\bootstrap-reboot.css" />
+    <Content Include="assets\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\lightbox.min.css" />
+    <Content Include="assets\css\normalize.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\reset.css" />
+    <Content Include="assets\img\1.png" />
+    <Content Include="assets\img\10.jpg" />
+    <Content Include="assets\img\10.png" />
+    <Content Include="assets\img\11.jpg" />
+    <Content Include="assets\img\11.png" />
+    <Content Include="assets\img\12.jpg" />
+    <Content Include="assets\img\12.png" />
+    <Content Include="assets\img\18.png" />
+    <Content Include="assets\img\2.png" />
+    <Content Include="assets\img\200x200.png" />
+    <Content Include="assets\img\223.jpg" />
+    <Content Include="assets\img\27.png" />
+    <Content Include="assets\img\3.png" />
+    <Content Include="assets\img\33.png" />
+    <Content Include="assets\img\36.png" />
+    <Content Include="assets\img\4.png" />
+    <Content Include="assets\img\41.png" />
+    <Content Include="assets\img\5.png" />
+    <Content Include="assets\img\6.png" />
+    <Content Include="assets\img\7.png" />
+    <Content Include="assets\img\8.png" />
+    <Content Include="assets\img\9.jpg" />
+    <Content Include="assets\img\9.png" />
+    <Content Include="assets\img\a1.jpg" />
+    <Content Include="assets\img\alejandro-escamilla-6-unsplash.jpg" />
+    <Content Include="assets\img\alexander-andrews-396649-unsplash.jpg" />
+    <Content Include="assets\img\amos-bar-zeev-138099-unsplash.jpg" />
+    <Content Include="assets\img\architecture-black-and-white-building-264471.jpg" />
+    <Content Include="assets\img\blue-clothes-clothing-52518.jpg" />
+    <Content Include="assets\img\boutique-clothes-indoors-264554.jpg" />
+    <Content Include="assets\img\brooke-lark-254998-unsplash.jpg" />
+    <Content Include="assets\img\charisse-kenion-468068-unsplash.jpg" />
+    <Content Include="assets\img\city_1.jpg" />
+    <Content Include="assets\img\city_2.jpg" />
+    <Content Include="assets\img\city_3.jpg" />
+    <Content Include="assets\img\dan-gold-105699-unsplash.jpg" />
+    <Content Include="assets\img\danielle-macinnes-76485-unsplash.jpg" />
+    <Content Include="assets\img\eaters-collective-132773-unsplash.jpg" />
+    <Content Include="assets\img\eiliv-sonas-aceron-1113078-unsplash.jpg" />
+    <Content Include="assets\img\element5-digital-500009-unsplash.jpg" />
+    <Content Include="assets\img\gc-libraries-creative-tech-lab-143678-unsplash.jpg" />
+    <Content Include="assets\img\industrial_1.jpg" />
+    <Content Include="assets\img\industrial_2.jpg" />
+    <Content Include="assets\img\industrial_3.jpg" />
+    <Content Include="assets\img\julian-o-hayon-237297-unsplash.jpg" />
+    <Content Include="assets\img\lily-banse-365344-unsplash.jpg" />
+    <Content Include="assets\img\luke-michael-27050-unsplash.jpg" />
+    <Content Include="assets\img\map.png" />
+    <Content Include="assets\img\nature_1.jpg" />
+    <Content Include="assets\img\nature_2.jpg" />
+    <Content Include="assets\img\nature_3.jpg" />
+    <Content Include="assets\img\pepi-stojanovski-610836-unsplash.jpg" />
+    <Content Include="assets\img\sample.jpg" />
+    <Content Include="assets\img\shop1.jpg" />
+    <Content Include="assets\img\shop2.jpg" />
+    <Content Include="assets\img\shop3.jpg" />
+    <Content Include="assets\img\shop4.jpg" />
+    <Content Include="assets\img\shop5.jpg" />
+    <Content Include="assets\img\shop6.png" />
+    <Content Include="assets\img\tamara-bellis-478068-unsplash.jpg" />
+    <Content Include="assets\js\all.js" />
+    <Content Include="assets\js\all.min.js" />
+    <Content Include="assets\js\bootstrap.bundle.js" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery-3.3.1.min.js" />
+    <Content Include="assets\js\jquery.filterizr.min.js" />
+    <Content Include="assets\js\jquery.rateyo.min.js" />
+    <Content Include="assets\js\lightbox.min.js" />
+    <Content Include="assets\js\Myapp.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\wow.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="Cart.aspx" />
+    <Content Include="contact us.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\extras.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\nivo-lightbox.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.theme.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slicknav.css" />
+    <Content Include="css\twentytwenty.css" />
+    <Content Include="displayitems.aspx" />
+    <Content Include="DriverView.aspx" />
+    <Content Include="EditProfile.aspx" />
+    <Content Include="EditProfileForUser.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="ForgetPasswordPage.aspx" />
+    <Content Include="Global.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\adminBackImage.jpg" />
+    <Content Include="images\cart.jpg" />
+    <Content Include="images\check.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\footer.jpg" />
+    <Content Include="images\icon_1.svg" />
+    <Content Include="images\icon_2.svg" />
+    <Content Include="images\icon_3.svg" />
+    <Content Include="images\search.svg" />
+    <Content Include="images\shopping.svg" />
+    <Content Include="img\63007-shopping-cart-icon.png" />
+    <Content Include="img\about\img1.png" />
+    <Content Include="img\about\img2.png" />
+    <Content Include="img\about\img3.png" />
+    <Content Include="img\about\img4.png" />
+    <Content Include="img\about\layers.png" />
+    <Content Include="img\about\responsive.png" />
+    <Content Include="img\about\testimonial-bg.jpg" />
+    <Content Include="img\bags-beauty-black-friday-994197.jpg" />
+    <Content Include="img\bmwi8.jpg" />
+    <Content Include="img\bmww.jpg" />
+    <Content Include="img\clients\img1.png" />
+    <Content Include="img\clients\img2.png" />
+    <Content Include="img\clients\img3.png" />
+    <Content Include="img\clients\img4.png" />
+    <Content Include="img\clients\img5.png" />
+    <Content Include="img\clients\img6.png" />
+    <Content Include="img\closeicon.png" />
+    <Content Include="img\flicker\img1.jpg" />
+    <Content Include="img\flicker\img2.jpg" />
+    <Content Include="img\flicker\img3.jpg" />
+    <Content Include="img\flicker\img4.jpg" />
+    <Content Include="img\flicker\img5.jpg" />
+    <Content Include="img\flicker\img6.jpg" />
+    <Content Include="img\green-hand-trolley.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\portfolio\img1.jpg" />
+    <Content Include="img\portfolio\img2.jpg" />
+    <Content Include="img\portfolio\img3.jpg" />
+    <Content Include="img\portfolio\img4.jpg" />
+    <Content Include="img\portfolio\img5.jpg" />
+    <Content Include="img\portfolio\img6.jpg" />
+    <Content Include="img\recycle-bin.png" />
+    <Content Include="img\slider1.jpg" />
+    <Content Include="img\slider2.jpg" />
+    <Content Include="img\slider3.jpg" />
+    <Content Include="img\slider\bg-1.jpg" />
+    <Content Include="img\slider\bg-2.jpg" />
+    <Content Include="img\slider\bg-3.jpg" />
+    <Content Include="img\team\team-05.jpg" />
+    <Content Include="img\team\team-06.jpg" />
+    <Content Include="img\team\team-07.jpg" />
+    <Content Include="img\testimonial\img1.jpg" />
+    <Content Include="img\testimonial\img2.jpg" />
+    <Content Include="img\testimonial\img3.jpg" />
+    <Content Include="img\testimonial\testimonial-bg.jpg" />
+    <Content Include="img\tvbackground.png" />
+    <Content Include="img\vid.mp4" />
+    <Content Include="js\app.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\cart.js" />
+    <Content Include="js\categories.js" />
+    <Content Include="js\checkout.js" />
+    <Content Include="js\contact-form-script.js" />
+    <Content Include="js\contact.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\form-validator.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery-min.js" />
+    <Content Include="js\jquery.countTo.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.event.move.js" />
+    <Content Include="js\jquery.mixitup.js" />
+    <Content Include="js\jquery.nav.js" />
+    <Content Include="js\jquery.slicknav.js" />
+    <Content Include="js\jquery.twentytwenty.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\particles.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\product.js" />
+    <Content Include="js\scrolling-nav.js" />
+    <Content Include="js\wow.js" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="LoginToShowAdmin.aspx" />
+    <Content Include="MessageView.aspx" />
+    <Content Include="My files\My JS.js" />
+    <Content Include="My files\styles.css" />
+    <Content Include="NewPassword.aspx" />
+    <Content Include="OrderPage.aspx" />
+    <Content Include="OrderPageNew.aspx" />
+    <Content Include="orderView.aspx" />
+    <Content Include="plugins\easing\easing.js" />
+    <Content Include="plugins\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="plugins\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="plugins\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="plugins\greensock\animation.gsap.min.js" />
+    <Content Include="plugins\greensock\ScrollToPlugin.min.js" />
+    <Content Include="plugins\greensock\TimelineMax.min.js" />
+    <Content Include="plugins\greensock\TweenMax.min.js" />
+    <Content Include="plugins\Isotope\isotope.pkgd.min.js" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\ajax-loader.gif" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\animate.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.carousel.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.carousel.js" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.theme.default.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.video.play.png" />
+    <Content Include="plugins\parallax-js-master\parallax.min.js" />
+    <Content Include="plugins\scrollmagic\ScrollMagic.min.js" />
+    <Content Include="ProductView.aspx" />
+    <Content Include="Proudect-Detailes.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RESULT.aspx" />
+    <Content Include="ShowUserNew.aspx" />
+    <Content Include="styles\bootstrap4\bootstrap.min.css" />
+    <Content Include="styles\bootstrap4\bootstrap.min.js" />
+    <Content Include="styles\bootstrap4\popper.js" />
+    <Content Include="styles\cart.css" />
+    <Content Include="styles\cart_responsive.css" />
+    <Content Include="styles\categories.css" />
+    <Content Include="styles\categories_responsive.css" />
+    <Content Include="styles\checkout.css" />
+    <Content Include="styles\checkout_responsive.css" />
+    <Content Include="styles\contact.css" />
+    <Content Include="styles\contact_responsive.css" />
+    <Content Include="styles\main_styles.css" />
+    <Content Include="styles\product.css" />
+    <Content Include="styles\product_responsive.css" />
+    <Content Include="styles\responsive.css" />
+    <Content Include="TrackOrderView.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="AdminHome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminPage.Master.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Master.designer.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs" />
+    <Compile Include="Cart_Attripute.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Category_Attripute.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="contact us.aspx.cs">
+      <DependentUpon>contact us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact us.aspx.designer.cs">
+      <DependentUpon>contact us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Date.cs" />
+    <Compile Include="displayitems.aspx.cs">
+      <DependentUpon>displayitems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displayitems.aspx.designer.cs">
+      <DependentUpon>displayitems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.cs" />
+    <Compile Include="DriverView.aspx.cs">
+      <DependentUpon>DriverView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DriverView.aspx.designer.cs">
+      <DependentUpon>DriverView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver_Attripute.cs" />
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfileForUser.aspx.cs">
+      <DependentUpon>EditProfileForUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfileForUser.aspx.designer.cs">
+      <DependentUpon>EditProfileForUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPasswordPage.aspx.cs">
+      <DependentUpon>ForgetPasswordPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPasswordPage.aspx.designer.cs">
+      <DependentUpon>ForgetPasswordPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.aspx.cs">
+      <DependentUpon>Global.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.aspx.designer.cs">
+      <DependentUpon>Global.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login MasterPage.Master.cs">
+      <DependentUpon>Login MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login MasterPage.Master.designer.cs">
+      <DependentUpon>Login MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdmin.cs" />
+    <Compile Include="LoginAdmin_attripute.cs" />
+    <Compile Include="LoginToShowAdmin.aspx.cs">
+      <DependentUpon>LoginToShowAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginToShowAdmin.aspx.designer.cs">
+      <DependentUpon>LoginToShowAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageView.aspx.cs">
+      <DependentUpon>MessageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageView.aspx.designer.cs">
+      <DependentUpon>MessageView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Message_Attripute.cs" />
+    <Compile Include="NewPassword.aspx.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewPassword.aspx.designer.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderPage.aspx.cs">
+      <DependentUpon>OrderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderPage.aspx.designer.cs">
+      <DependentUpon>OrderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPageNew.aspx.cs">
+      <DependentUpon>OrderPageNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderPageNew.aspx.designer.cs">
+      <DependentUpon>OrderPageNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderView.aspx.cs">
+      <DependentUpon>orderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderView.aspx.designer.cs">
+      <DependentUpon>orderView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Attripute.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Attripute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proudect-Detailes.aspx.cs">
+      <DependentUpon>Proudect-Detailes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Proudect-Detailes.aspx.designer.cs">
+      <DependentUpon>Proudect-Detailes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RESULT.aspx.cs">
+      <DependentUpon>RESULT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RESULT.aspx.designer.cs">
+      <DependentUpon>RESULT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowUserNew.aspx.cs">
+      <DependentUpon>ShowUserNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowUserNew.aspx.designer.cs">
+      <DependentUpon>ShowUserNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrackOrderView.aspx.cs">
+      <DependentUpon>TrackOrderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrackOrderView.aspx.designer.cs">
+      <DependentUpon>TrackOrderView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs" />
+    <Compile Include="User_Attripute.cs" />
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPage.Master" />
+    <Content Include="Login MasterPage.Master" />
+    <Content Include="assets\css\.DS_Store" />
+    <Content Include="assets\css\bootstrap-grid.css.map" />
+    <Content Include="assets\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\js\bootstrap.js.map" />
+    <Content Include="assets\js\bootstrap.min.js.map" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\clients\.DS_Store" />
+    <Content Include="img\portfolio\.DS_Store" />
+    <Content Include="img\slider\.DS_Store" />
+    <Content Include="img\team\.DS_Store" />
+    <Content Include="img\testimonial\.DS_Store" />
+    <Content Include="js\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="plugins\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="plugins\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\core.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\list.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\path.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="plugins\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="plugins\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57709</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57709/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,140 @@
+﻿textarea {
+    min-height: 60px !important;
+    max-height: 400px !important;
+}
+
+.nav-font {
+    font-weight: bold !important;
+}
+
+.navHeight {
+    height: 4rem !important;
+}
+
+.navbar-bink * {
+    color: rgb(0,0,0) !important;
+    font-size: large !important;
+    font-weight: bold !important;
+}
+
+.navbar-bink {
+    color: rgba(255,255,255,.7) !important;
+}
+
+.navbar-black button {
+    background-color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: "Arial Black";
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,.7) !important;
+}
+
+.breadcrumbColor {
+    color: rgba(255,255,255,.7) !important;
+}
+
+.hrr {
+    border-top: 1px solid rgba(255,255,255,.7) !important;
+}
+
+hr {
+    color: rgba(100,100,100,.9) !important;
+    border-top: 1px solid rgba(100,100,100,.9) !important;
+}
+
+.hr {
+    border-top: 1px solid rgba(255,255,255,.7) !important;
+    width: 70% !important;
+    float: left;
+}
+
+.badge-light-red {
+    background-color: #9b59b6 !important;
+    color: white !important;
+}
+
+.bg-dark {
+    background-color: rgba(20, 32, 40, 0.62) !important;
+}
+
+.bg-none {
+    background-color: rgba(255,255,255,0);
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.font-14px {
+    font-size: 14px !important;
+}
+
+.wow {
+    /*visibility: hidden !important;*/
+}
+
+.search-group {
+    border-radius: 20px !important;
+}
+
+.search {
+    border-radius: 0px 20px 20px 0px;
+    border-left: none !important;
+}
+
+.search-icon {
+    border-right: none !important;
+    border-radius: 20px 0px 0px 20px
+}
+
+.bg-opacity {
+    background-color: rgba(50,50,70,.3) !important;
+}
+
+.bg-image {
+    background: url("../assets/img/9.jpg") no-repeat 50px 50px;
+}
+
+#new {
+    position: absolute;
+    right: .5%;
+    font-size: xx-large;
+}
+
+    #new > span {
+        box-shadow: 5px 5px 20px rgb(50,100,255) !important;
+    }
+
+#soldOut {
+    position: absolute;
+    top: 25%;
+    transform: rotate(320deg);
+    color: rgba(20, 32, 40, 0.62);
+    font-size: 4.5rem;
+}
+
+    #soldOut > span {
+        background-color: rgba(255,180,0,.7);
+        box-shadow: 5px 5px 20px rgba(255,180,0,.7) !important;
+    }
+
+#footerCopyRight {
+    border-top: 1px solid #5F6060;
+    color: rgba(255,255,255,.7);
+    font-size: larger;
+    font-family: "Engravers MT";
+}
+
+.text-white-50 {
+    color: rgba(255,255,255,.7) !important;
+}
+
+#signupCard {
+    height: 200px !important;
+}

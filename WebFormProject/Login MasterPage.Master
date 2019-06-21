@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login MasterPage.master.cs" Inherits="WebFormProject.Login_MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse Website</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="My%20files/styles.css">
+</head>
+<body style="background: no-repeat fixed url(assets/img/boutique-clothes-indoors-264554.jpg);background-size:cover">
+<header>
+    <div class="row fixed-top mb-5">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-bink navHeight" style="background-color: rgba(128, 128, 128,.7)!important;" id="nav1">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/33.png"
+                         width="45"
+                         class="img-fluid rounded mr-2"
+                         alt="Website Logo">E-COMMERSE EX
+                </a>
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav pl-3 pl-lg-0 ml-auto">
+                        <li class="nav-item pr-2">
+                            <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown pr-2">
+                            <a class="nav-link dropdown-toggle" href="Categories.html" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="Categories.html">Categories</a>
+                                <a class="dropdown-item" href="Category.html">Category 01</a>
+                                <a class="dropdown-item" href="Category.html">Category 02</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="Category.html">Category 01</a>
+                                <a class="dropdown-item" href="Category.html">Category 02</a>
+                                <a class="dropdown-item" href="Category.html">Category 03</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pr-2">
+                            <a class="nav-link" href="Recommendations.html">Recommendaions</a>
+                        </li>
+                        <li class="nav-item pr-2">
+                            <a class="nav-link" href="AboutUs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav pl-3 pl-lg-0 ml-auto">
+                        <li class="nav-item">
+                            <a href="Log%20In.html.html" class="nav-link">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div style="height:100px"></div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <div style="height:40px"></div>
+</main>
+<footer>
+    <div class="jumbotron jumbotron-fluid mb-0 border-light border-top bg-dark text-white-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="pl-3 pl-md-0 text-bold">Quick Links</h3>
+                    <hr>
+                    <ul class="list-unstyled pl-3 pl-md-0">
+                        <li><i class="fa fa-caret-right mr-1"></i>
+                            <a href="AboutUs.html">About Us</a></li>
+                        <li><i class="fa fa-caret-right mr-2"></i><a href="#">Customer Service</a></li>
+                        <li><i class="fa fa-caret-right mr-2"></i><a href="#">Privacy Policy</a></li>
+                        <li><i class="fa fa-caret-right mr-2"></i><a href="ContactUs.html">Contact Us</a></li>
+                        <li><i class="fa fa-caret-right mr-2"></i><a href="#">Help</a></li>
+                        <li><i class="fa fa-caret-right mr-2"></i><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="pl-3 pl-md-0 text-bold">Contact Us</h3>
+                    <hr>
+                    <ul class="list-unstyled pl-3 pl-md-0pl-3 pl-md-0">
+                        <li><p><i class="fa fa-address-card mr-1"></i>
+                            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+                            ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p></li>
+                        <li><p><i class="fa fa-phone-square mr-1"></i>(000)000-000-0000</p></li>
+                        <li><p><i class="fa fa-fax mr-1"></i>(000)000-000-0000</p></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                    <h3 class="pl-3 pl-md-0 text-bold">Location</h3>
+                    <hr>
+                    <div class="pl-3 pl-md-0">
+                        <img src="assets/img/map.png" height="150px" class="w-100" alt="Map Pic"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-dark text-center text-bold m-0 p-4" id="footerCopyRight">
+        <div class="col-12">
+            <p>
+                All Copy Rights are reserved by M.ABD.EL-FTAH &copy; &reg; 2019
+            </p></div>
+    </div>
+</footer>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/all.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.filterizr.min.js"></script>
+<script src="assets/js/jquery.rateyo.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="My%20files/My%20JS.js"></script>
+</body>
+</html>
+
